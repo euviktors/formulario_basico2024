@@ -13,29 +13,40 @@
 
     <div class="container">
         <h2>Formulário</h2>
-        <form id="myForm">
+        <!-- Formulário com ação atualizada para o Sheet Monkey -->
+        <form id="myForm" action="https://api.sheetmonkey.io/form/8Vh23kz2vmQtoVFqLxW4CU" method="post">
+            <!-- Campo para o nome -->
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
+            <!-- Campo para a data -->
             <label for="data">Data:</label>
             <input type="date" id="data" name="data" required>
 
+            <!-- Campo para o email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
+            <!-- Campo para o endereço -->
             <label for="endereco">Endereço:</label>
             <textarea id="endereco" name="endereco" required></textarea>
 
+            <!-- Campo para o nome da empresa -->
             <label for="empresa">Nome da Empresa:</label>
             <input type="text" id="empresa" name="empresa" required>
 
-            <button type="button" onclick="enviarFormulario()">Enviar</button>
+            <!-- Botão de envio -->
+            <button type="submit">Enviar</button>
         </form>
     </div>
 
+    <!-- Créditos no final da página -->
     <div class="credits">
         <p>Desenvolvido por <a href="https://github.com/euviktors" target="_blank">@russodev</a></p>
     </div>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
